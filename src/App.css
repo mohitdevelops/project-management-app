@@ -1,69 +1,123 @@
-.wrapper{
-    background-color: var(--dark-color400);
-    overflow: hidden;
-    border: solid 1px var(--dark-color200);
-    border-radius: 20px;
-    padding: 1em;
+h1.title {
+	font-size: 1.8em;
+	font-weight: 700;
+	color: var(--primary-color400);
+	text-transform: uppercase;
+}
+.wrapper {
+	background-color: var(--dark-color400);
+	overflow: hidden;
+	border: solid 1px var(--dark-color200);
+	border-radius: 20px;
+	padding: 1em;
 }
 
-aside{
-    height: 100%;
-    border-right: solid 1px var(--dark-color200);
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+aside {
+	height: 100%;
+	border-right: solid 1px var(--dark-color200);
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-aside h1{
+aside h2 {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+aside ul {
+	background-color: var(--dark-color600);
+	list-style: none;
+	padding: 10px 10px 10px 30%;
+	margin: 0 0 20px;
+	margin-left: -30%;
+	border-radius: 20px;
+}
+
+aside ul li button{
+    width: 100%;
+    padding: 1px 7px;
+    text-align: left;
+    border: none;
+    background-color: transparent
+    ;
     color: var(--primary-color400);
-    font-size: 1.5em;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 5px 0;
+    transition: 0.3s ease;
+	position: relative;
 }
 
-aside ul{
-    background-color: var(--dark-color600);
-    /* background-color: red; */
-    list-style: none;
-    padding: 10px 10px 10px 35%;
-    margin: 0 0 20px;
-    margin-left: -30%;
-    border-radius: 20px;
+aside ul li button:hover{
+    color: #fff;
+}
+
+aside ul li button.active{
+	color: #fff;
+	font-weight: 600;
+	padding-left: 15px;
 }
 
 
-section.panel .form-label{
-    font-size: 0.9em;
-    font-weight: 500;
-    margin-top: 30px;
+section.panel .form-label {
+	font-size: 0.9em;
+	font-weight: 500;
 }
-section.panel .form-label:first-child{
-    margin-top: 0;
+section.panel .form-control {
+	background-color: var(--dark-color600);
+	border: solid 1px var(--dark-color200);
+	color: var(--primary-color400);
+	margin-bottom: 20px;
 }
-section.panel .form-control{
-    background-color: var(--dark-color600);
-    border: solid 1px var(--dark-color200);
-    color: var(--primary-color400);
+section.panel .form-control:focus {
+	box-shadow: none;
+	outline: none;
+	border-color: var(--primary-color400);
 }
-section.panel .form-control:focus{
-    box-shadow: none;
-    outline: none;
-    border-color: var(--primary-color400);
-}
-menu{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin-top: 40px;
+menu {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	margin-top: 40px;
 }
 
-section.noproject img{
-    height: 50px;
-    margin: 0 0 30px;
+section.noproject img {
+	height: 50px;
+	margin: 0 0 30px;
 }
-section.noproject h4{
-    font-weight: 700;
+section.noproject h4 {
+	font-weight: 700;
+}
+
+button.deletebtn{
+	background: none;
+	border: none;
+	padding: 0;
+	line-height: 0;
+	font-size: 1em;
+	color: var(--dark-color200);
+}
+.selectedcontent{
+	border-top: solid 1px var(--dark-color200);
+	padding-top: 20px;
+	margin: 10px 0 30px;
+}
+
+footer {
+	font-size: 0.8em;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+footer a:hover {
+	color: var(--primary-color400);
 }
